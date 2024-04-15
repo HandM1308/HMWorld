@@ -1,37 +1,64 @@
+[6:07 PM] Laxmi Hari Prasad Katta
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content = "width=device-width,initial-scale=1.0">
-<title>#TogetherForever</title>
+
+<title>Inviting you</title>
+
 </head>
+
 <style>
+
 	body{
+
 	margin: 0;
+
 	padding: 0;
-	background-image:url('hmpage2.png');
+
+	background-image:url('istockphoto-1482984658-640x640.jpg');
+
 	background-size: cover;
+
 	background:repeat:no-repeat;
+
 	overflow-y:scroll;
+
 	background-attachment: fixed;
+
 	font-family: Cursive;
+
 	}
+
 	.container{
+
 	text-align:center;
+
 	padding-top: 100px;
+
 	}
+
 	.cartoon-image{
+
 	height:auto;
+
 	width:150px;
-	border-radius : 100px;
+
+	border-radius : 10px;
+
 	border : 1px solid black;
-	margin:50px;
+
+	margin:20px;
+
 	cursor:pointer;
-	position:relative;
-	top:-40px;
-	left:365px;
+
 	}
-.button-55 {
+	.button-55 {
   align-self: center;
   background-color: #fff;
   background-image: none;
@@ -74,45 +101,58 @@
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
 </style>
+
 <body>
-	<div>
-	<form id="formhm" method="GET" action="thirdpage.html">
+	<form id="invitationForm" method="POST" action="thirdpage.html">
 	<div class="container">
-		<h1>Welcome to our World!!</h1>	
+
+		<h1>Welcome to our Wedding!!</h1>
+
 		<h4 id="welmsg"></h4>
+
 		<h4 id="welmsg1"></h4>
 	</div>
 		<div>
-			<tr>
-			<td><img class="cartoon-image" src="bride.jpg" alt="Bride" id="brideimage"></td>
-			<td><img class="cartoon-image" src="groom.jpg" alt="Groom" id="groomimage"></td>
-			</tr>
-			<div id="details"></div>
-			<button class="button-55" type="submit" >Click me to know<br> When?</button>
-		</div>
-	</form>
-</div>
+
+			<img class="cartoon-image" src="groom.jpg" alt="Groom" id="groomimage">
+
+			<img class="cartoon-image" src="bride.jpg" alt="Bride" id="brideimage">
+
+		<div id="details"></div>
+		<button class="button-55" >Click me to know<br> When?</button>
+	</div>
+
 	<script>
+
 		function getParameterByName(name,url){
+
 			if(!url) url = window.location.href;
+
 			name = name.replace(/[\[\]]/g,'\\$&');
+
 			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),results = regex.exec(url);
+
 			if(!results) return null;
+
 			if(!results[2]) return '';
+
 			return decodeURIComponent(results[2].replace(/\+/g,''));
+
 			}
+
 			console.log(name);
+
 		var guestName = getParameterByName('guest_name');
+
 		document.getElementById('welmsg').innerText = "Dear " + guestName + ", want to know who is the bride and who is the groom?";
 		document.getElementById('welmsg1').innerText = "Then why are you waiting click on the below images and see the magic";
 		console.log(guestName);
 		document.getElementById('groomimage').addEventListener('click',function(){
-			document.getElementById('details').innerHTML = "<h2 id='text1' style= 'position:relative;'> Hari </h2><img id='img1' src='image1.jpg' alt='Groom Image' style='border-radius : 10px;position:relative;left:500px;height:auto;width:250px;border : 1px solid black;' onload='displayimg();displaytext();'>";
+			document.getElementById('details').innerHTML = "<h2 id='text1' style= 'position:relative;left:585px;top:-60px;'> Hari </h2><img id='img1' src='image1.jpg' alt='Groom Image' style='border-radius : 10px;position:relative;left:500px;height:auto;width:250px;border : 1px solid black;top:-60px;' onload='displayimg();displaytext();'>";
 		});
 		document.getElementById('brideimage').addEventListener('click',function(){
-			document.getElementById('details').innerHTML = "<h2 id='text2' style= 'position:relative;'> Manasa </h2><img id='img2' src='image2.jpg' alt ='Bride Image' style= 'border-radius : 10px;height:auto;width:250px;border : 1px solid black;position:relative;left:500px;' onload='displayimg1();displaytext1();' >";
+			document.getElementById('details').innerHTML = "<h2 id='text2' style= 'position:relative;left:580px;top:-60px;'> Manasa </h2><img id='img2' src='image2.jpg' alt ='Bride Image' style= 'border-radius : 10px;height:auto;width:250px;border : 1px solid black;position:relative;left:500px;top:-60px;' onload='displayimg1();displaytext1();' >";
 		});
-
 		function displayimg(){
 			var img = document.getElementById('img1');
 			setTimeout(function(){
@@ -137,7 +177,9 @@
 			img.style.display = 'none';
 			},2500);
 		}
+
 		</script>
-		
+
 </body>
+
 </html>
