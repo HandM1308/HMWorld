@@ -58,8 +58,6 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   position:relative;
-  top:-50px;
-  left:550px;
   }
 
 .button-55:hover {
@@ -73,7 +71,7 @@
 </style>
 
 <body>
-	<form id="invitationForm" method="POST" action="thirdpage.html">
+	<form id="formhm" method="GET" action="thirdpage.html">
 	<div class="container">
 		<h1>Welcome to our Wedding!!</h1>
 		<h4 id="welmsg"></h4>
@@ -100,10 +98,10 @@
 		document.getElementById('welmsg1').innerText = "Then why are you waiting click on the below images and see the magic";
 		console.log(guestName);
 		document.getElementById('groomimage').addEventListener('click',function(){
-			document.getElementById('details').innerHTML = "<h2 id='text1' style= 'position:relative;left:585px;top:-60px;'> Hari </h2><img id='img1' src='image1.jpg' alt='Groom Image' style='border-radius : 10px;position:relative;left:500px;height:auto;width:250px;border : 1px solid black;top:-60px;' onload='displayimg();displaytext();'>";
+			document.getElementById('details').innerHTML = "<h2 id='text1' > Hari </h2><img id='img1' src='image1.jpg' alt='Groom Image' style='border-radius : 10px;height:auto;width:250px;border : 1px solid black;' onload='displayimg();displaytext();'>";
 		});
 		document.getElementById('brideimage').addEventListener('click',function(){
-			document.getElementById('details').innerHTML = "<h2 id='text2' style= 'position:relative;left:580px;top:-60px;'> Manasa </h2><img id='img2' src='image2.jpg' alt ='Bride Image' style= 'border-radius : 10px;height:auto;width:250px;border : 1px solid black;position:relative;left:500px;top:-60px;' onload='displayimg1();displaytext1();' >";
+			document.getElementById('details').innerHTML = "<h2 id='text2'> Manasa </h2><img id='img2' src='image2.jpg' alt ='Bride Image' style= 'border-radius : 10px;height:auto;width:250px;border : 1px solid black;' onload='displayimg1();displaytext1();' >";
 		});
 		function displayimg(){
 			var img = document.getElementById('img1');
