@@ -57,7 +57,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  position:relative;
+  position:center;
   }
 
 .button-55:hover {
@@ -98,10 +98,10 @@
 		document.getElementById('welmsg1').innerText = "Then why are you waiting click on the below images and see the magic";
 		console.log(guestName);
 		document.getElementById('groomimage').addEventListener('click',function(){
-			document.getElementById('details').innerHTML = "<h2 id='text1' > Hari </h2><img id='img1' src='image1.jpg' alt='Groom Image' style='border-radius : 10px;height:auto;width:250px;border : 1px solid black;' onload='displayimg();displaytext();'>";
+			document.getElementById('details').innerHTML = "<h2 id='text1' > Hari </h2><img id='img1' src='image1.jpg' alt='Groom Image' style='border-radius : 10px;height:auto;width:250px;border : 1px solid black;position:center;' onload='displayimg();displaytext();'>";
 		});
 		document.getElementById('brideimage').addEventListener('click',function(){
-			document.getElementById('details').innerHTML = "<h2 id='text2'> Manasa </h2><img id='img2' src='image2.jpg' alt ='Bride Image' style= 'border-radius : 10px;height:auto;width:250px;border : 1px solid black;' onload='displayimg1();displaytext1();' >";
+			document.getElementById('details').innerHTML = "<h2 id='text2'> Manasa </h2><img id='img2' src='image2.jpg' alt ='Bride Image' style= 'border-radius : 10px;height:auto;width:250px;border : 1px solid black;position:center;' onload='displayimg1();displaytext1();' >";
 		});
 		function displayimg(){
 			var img = document.getElementById('img1');
